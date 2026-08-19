@@ -231,3 +231,353 @@ width:130px;
 }
 
   }
+/* =========================
+   PART 3 — ABOUT / WHY US
+========================= */
+
+.about-section{
+  min-height:680px;
+  padding:110px 70px;
+  background:#f7f7f7;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:90px;
+}
+
+
+/* =========================
+   ABOUT IMAGE
+========================= */
+
+.about-image{
+  width:48%;
+  max-width:560px;
+  height:500px;
+
+  position:relative;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.about-red-shape{
+  position:absolute;
+
+  width:390px;
+  height:390px;
+
+  background:#c41212;
+
+  border-radius:50%;
+
+  left:50%;
+  top:50%;
+
+  transform:translate(-50%,-50%);
+}
+
+.about-image img{
+  position:relative;
+  z-index:2;
+
+  width:90%;
+  max-width:500px;
+
+  object-fit:contain;
+
+  filter:drop-shadow(0 20px 20px rgba(0,0,0,.15));
+}
+
+
+/* =========================
+   EXPERIENCE CARD
+========================= */
+
+.experience-card{
+  position:absolute;
+
+  right:5px;
+  bottom:35px;
+
+  width:145px;
+  height:145px;
+
+  background:#fff;
+
+  border-radius:50%;
+
+  z-index:5;
+
+  display:flex;
+  flex-direction:column;
+
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+
+  box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+
+.experience-card strong{
+  color:#c41212;
+  font-size:30px;
+  font-weight:800;
+}
+
+.experience-card span{
+  color:#444;
+  font-size:12px;
+  line-height:1.4;
+  font-weight:600;
+}
+
+
+/* =========================
+   ABOUT CONTENT
+========================= */
+
+.about-content{
+  width:48%;
+  max-width:540px;
+}
+
+.about-content .small-title{
+  margin-bottom:15px;
+}
+
+.about-content h2{
+  font-size:53px;
+  line-height:1.05;
+
+  font-weight:800;
+
+  letter-spacing:-1px;
+}
+
+.about-content h2 span{
+  color:#c41212;
+}
+
+.about-intro{
+  margin-top:22px;
+
+  max-width:510px;
+
+  color:#666;
+
+  font-size:15px;
+
+  line-height:1.8;
+}
+
+
+/* =========================
+   WHY LIST
+========================= */
+
+.why-list{
+  margin-top:30px;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:20px;
+}
+
+.why-item{
+  display:flex;
+
+  align-items:flex-start;
+
+  gap:16px;
+}
+
+.why-icon{
+  flex-shrink:0;
+
+  width:34px;
+  height:34px;
+
+  background:#c41212;
+
+  color:#fff;
+
+  border-radius:50%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-size:16px;
+  font-weight:700;
+}
+
+.why-item h3{
+  font-size:16px;
+
+  margin-bottom:4px;
+
+  font-weight:700;
+}
+
+.why-item p{
+  font-size:12px;
+
+  color:#777;
+
+  line-height:1.6;
+
+  max-width:400px;
+}
+
+
+/* =========================
+   ABOUT BUTTON
+========================= */
+
+.about-btn{
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:12px;
+
+  margin-top:32px;
+
+  padding:14px 23px;
+
+  background:#c41212;
+
+  color:#fff;
+
+  text-decoration:none;
+
+  border-radius:8px;
+
+  font-size:14px;
+
+  font-weight:600;
+
+  transition:.2s ease;
+}
+
+.about-btn span{
+  font-size:20px;
+
+  line-height:0;
+}
+
+.about-btn:hover{
+  background:#a80f0f;
+
+  transform:translateY(-2px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1000px){
+
+  .about-section{
+    gap:45px;
+    padding:90px 40px;
+  }
+
+  .about-content h2{
+    font-size:44px;
+  }
+
+  .about-red-shape{
+    width:330px;
+    height:330px;
+  }
+
+}
+
+
+@media(max-width:800px){
+
+  .about-section{
+    flex-direction:column;
+
+    padding:80px 20px;
+
+    gap:55px;
+  }
+
+  .about-image,
+  .about-content{
+    width:100%;
+    max-width:550px;
+  }
+
+  .about-image{
+    height:420px;
+  }
+
+  .about-content h2{
+    font-size:42px;
+  }
+
+  .experience-card{
+    right:10px;
+    bottom:15px;
+
+    width:125px;
+    height:125px;
+  }
+
+  .experience-card strong{
+    font-size:26px;
+  }
+
+}
+
+
+@media(max-width:500px){
+
+  .about-section{
+    padding:70px 20px;
+  }
+
+  .about-image{
+    height:350px;
+  }
+
+  .about-red-shape{
+    width:260px;
+    height:260px;
+  }
+
+  .about-content h2{
+    font-size:35px;
+  }
+
+  .about-intro{
+    font-size:14px;
+  }
+
+  .experience-card{
+    width:110px;
+    height:110px;
+
+    right:0;
+    bottom:5px;
+  }
+
+  .experience-card strong{
+    font-size:23px;
+  }
+
+  .experience-card span{
+    font-size:10px;
+  }
+
+}
